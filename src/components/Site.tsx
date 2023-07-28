@@ -5,7 +5,6 @@ import {Error404} from "./pages/Error404";
 import {Page} from "./pages/Page";
 import {dataState} from "../dataState/dataState";
 
-
 export const Site = () => {
     return (
         <div>
