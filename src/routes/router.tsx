@@ -4,6 +4,8 @@ import {Error404} from "../components/pages/Error404";
 import App from "../App";
 import {Page} from "../components/pages/Page";
 import {dataState} from "../dataState/dataState";
+import {ProtectedPage} from "../components/pages/ProtectedPage";
+import {ProtectedRoute} from "./ProtectedRoute";
 
 export const router = createBrowserRouter([
     {
@@ -17,6 +19,16 @@ export const router = createBrowserRouter([
                     <Page pages={dataState.pages}/>
                 ),
             },
+            {
+                path: "/protected",
+                element: (
+                    <ProtectedRoute>
+                        <ProtectedPage />
+                    </ProtectedRoute>
+
+                ),
+            },
+
         ],
     },
 ]);

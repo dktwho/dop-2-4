@@ -23,7 +23,6 @@ export const Content = (props:ContentTypeProps) => {
             <div>{pages}</div>
             <button onClick={onClickMainPageHandler}>Main page</button>
             <button onClick={onClickComebackHandler}>Comeback</button>
-
         </div>
     );
 };

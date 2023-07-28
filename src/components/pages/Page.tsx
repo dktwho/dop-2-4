@@ -9,10 +9,8 @@ type PagePropsType = {
     pages: Array<PagesType>
 }
 
-
 export const Page = (props: PagePropsType) => {
     const param = useParams()
-
 
     return (
         <div>
@@ -22,16 +20,6 @@ export const Page = (props: PagePropsType) => {
                                pages={props.pages[Number(param.id)].about}/>
                     : <Error404/>}</div>
 
-
-
-        // <div>
-        //     <div>
-        //         {props.pages[Number(param.id)].heading}
-        //     </div>
-        //     <div>
-        //         {props.pages[Number(param.id)].about}
-        //     </div>
-        // </div>
     );
 };
 
