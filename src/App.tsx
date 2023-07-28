@@ -1,12 +1,18 @@
 import React from 'react';
 import './App.css';
-import {NavLink, Outlet} from "react-router-dom";
+import {NavLink, Outlet, useNavigate} from "react-router-dom";
 import styles from "./components/Site.module.css";
 import {S} from '../src/styles/_appStyles'
 import {useWindowSize} from "./routes/useWindowSize";
 
+// const navigate=useNavigate()
+//
+// if(location.pathname==='/'){
+//     navigate('/page/0')
+// }
 
 function App() {
+
     const size = useWindowSize()
 
     return (
