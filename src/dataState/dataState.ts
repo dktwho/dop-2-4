@@ -13,6 +13,7 @@ export const dataState: DataStateType = {
                 heading: "Конструкция \"switch\"",
                 about: " Конструкция switch заменяет собой сразу несколько if.",
             },
+
         ],
 }
 
